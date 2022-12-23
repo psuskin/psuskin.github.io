@@ -3,10 +3,8 @@
 	width:1280px;
 	height:3357px;
 	position:absolute;
-	
 
-	left: 50%;
-	transform: translate(-50%, 0%);
+	margin-left: calc(50% - 640px);
 }
 .top-bar {
 	width:1280px;
