@@ -1,6 +1,6 @@
 # psuskin.github.io
 
-##TODO
+## TODO
 - Dark mode
 - Works on mobile
 - Hyperrefs and buttons
