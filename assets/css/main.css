@@ -954,6 +954,32 @@ input[type="button"]:focus {
     text-shadow: 10px 18px 35px rgba(88, 88, 88, 0.23)
 }
 
+.animate-character
+{
+  background-image: linear-gradient(
+    45deg,
+    #100929 0%,
+    #231561 29%,
+    #8072ce 67%,
+    #bebebe 100%
+  );
+  background-clip: border-box;
+  background-size: 300% auto;
+  background-repeat: repeat;
+  /* color: #fff; */
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 3s linear infinite alternate;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 100% center;
+  }
+}
+
+
 .introduction__content-el--job {
     -webkit-transform: translateX(30px);
     transform: translateX(30px);
