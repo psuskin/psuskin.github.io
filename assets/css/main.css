@@ -631,10 +631,31 @@ input[type="button"]:focus {
 }
 
 .navigation {
-    position: absolute;
+    position: fixed;
+    background-color: white;
+    transition: background-color 0.3s ease-in-out;
     width: 100%;
     height: 100px;
     z-index: 10
+}
+
+.navigation.gray {
+    /* background-color: rgb(219, 219, 250); */
+    background-color: #fafafa;
+}
+
+.navigation::after {
+    content: "";
+    display: block;
+    height: 1px;
+    /* Adjust the border thickness as needed */
+    background-color: gray;
+    position: absolute;
+    bottom: 0;
+    left: 2%;
+    /* Adjust the left offset to control the border width */
+    right: 2%;
+    /* Adjust the right offset to control the border width */
 }
 
 .navigation__wrapper {
@@ -752,6 +773,20 @@ input[type="button"]:focus {
         transition: color .2s ease-in-out, -webkit-transform .2s 1s;
         transition: transform .2s 1s, color .2s ease-in-out;
         transition: transform .2s 1s, color .2s ease-in-out, -webkit-transform .2s 1s
+    }
+
+    .navigation__container--is-open .navigation__list>li:nth-child(5) a {
+        -webkit-transition: color .2s ease-in-out, -webkit-transform .2s 1.2s;
+        transition: color .2s ease-in-out, -webkit-transform .2s 1s;
+        transition: transform .2s 1s, color .2s ease-in-out;
+        transition: transform .2s 1s, color .2s ease-in-out, -webkit-transform .2s 1.2s
+    }
+
+    .navigation__container--is-open .navigation__list>li:nth-child(6) a {
+        -webkit-transition: color .2s ease-in-out, -webkit-transform .2s 1.4s;
+        transition: color .2s ease-in-out, -webkit-transform .2s 1s;
+        transition: transform .2s 1s, color .2s ease-in-out;
+        transition: transform .2s 1s, color .2s ease-in-out, -webkit-transform .2s 1.4s
     }
 
     .navigation__container--is-open .navigation__list>li a {
@@ -926,12 +961,29 @@ input[type="button"]:focus {
     opacity: 0
 }
 
+.introduction__arrow-link {
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    /* Center horizontally */
+    display: block;
+    /* Make the anchor a block-level element */
+    padding: 0px 20px 50px 20px;
+    /* padding: 20px; */
+    /* Adjust the padding size as needed to create the desired clickable area */
+}
+
+.introduction__arrow-container {
+    display: inline-block;
+}
+
 .introduction__arrow {
     position: absolute;
-    bottom: 10%;
+    bottom: 80%;
     left: 50%;
-    -webkit-transform: translate(-12px, 0px);
-    transform: translate(-12px, 0px);
+    -webkit-transform: translate(-12px, 0);
+    transform: translate(-120px, 0);
     width: 24px;
     fill: #213571;
     -webkit-animation: scrollDown 1.6s infinite;
@@ -1322,7 +1374,8 @@ input[type="button"]:focus {
 }
 
 .work__content-blurb p {
-    max-width: 350px
+    max-width: 350px;
+    /* height: 55px; */
 }
 
 .work__visual {
@@ -1337,6 +1390,11 @@ input[type="button"]:focus {
     display: block;
     width: 100%;
     border-radius: 8px;
+    /* height: 24rem; */
+    /* height: 34vh; */
+    max-height: 24rem;
+    min-height: 12rem;
+    height: 30vw;
 }
 
 .work__navigation {
