@@ -6,7 +6,7 @@ html {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     overflow-x: hidden;
-    /* scroll-behavior: smooth; */
+    scroll-behavior: smooth;
 }
 
 body {
