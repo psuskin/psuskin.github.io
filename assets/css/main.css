@@ -1027,6 +1027,7 @@ input[type="button"] {
     position: relative;
     width: 100%;
     height: 625px;
+    scroll-margin-top: 90px;
     background-color: #fafafa
 }
 
@@ -1079,6 +1080,7 @@ input[type="button"] {
 
 @media (max-width: 991px) {
     .about {
+        scroll-margin-top: 60px;
         padding: 60px 0
     }
 
@@ -1162,14 +1164,15 @@ input[type="button"] {
 .app-design {
     position: relative;
     width: 100%;
-    padding: 0px 0px 90px 00px;
+    padding: 0px 0px 90px 0px;
+    scroll-margin-top: 150px;
     /* padding: 180px 0; */
-    overflow: hidden
+    /* overflow: hidden */
 }
 
 .app-design__visual {
     position: absolute;
-    top: 100px;
+    top: 40px;
     left: 45%;
     width: 1036px;
     height: 659px;
@@ -1204,6 +1207,7 @@ input[type="button"] {
 @media (max-width: 767px) {
     .app-design {
         height: 400px;
+        scroll-margin-top: 135px;
         padding: 0px 0px 105px 0px;
     }
 
@@ -1322,6 +1326,7 @@ input[type="button"] {
     position: relative;
     width: 100%;
     padding: 60px 0 60px 0;
+    scroll-margin-top: 90px;
     background-color: #fafafa
 }
 
@@ -1506,6 +1511,7 @@ input[type="button"] {
 
 .blog {
     position: relative;
+    scroll-margin-top: 90px;
     padding: 60px 0
 }
 
@@ -1607,6 +1613,7 @@ input[type="button"] {
 .contact {
     position: relative;
     padding: 60px 0;
+    scroll-margin-top: 90px;
     background-color: #fafafa
 }
 
