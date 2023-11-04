@@ -1146,7 +1146,7 @@ input[type="button"]:focus {
 .app-design {
     position: relative;
     width: 100%;
-    padding: 0px 0px 180px 00px;
+    padding: 0px 0px 90px 00px;
     /* padding: 180px 0; */
     overflow: hidden
 }
@@ -1165,21 +1165,30 @@ input[type="button"]:focus {
     /* transform: none; */
 }
 
+@media (max-width: 1450px) {
+    .app-design__visual {
+        display: none;
+    }
+
+    .app-design__content {
+        text-align: center
+    }
+
+    .app-design__content p {
+        margin: 0 auto 20px auto
+    }
+}
+
 @media (max-width: 991px) {
     .app-design__content h2 {
         font-size: 48px
-    }
-
-    .app-design__visual {
-        width: 922px;
-        height: 586px
     }
 }
 
 @media (max-width: 767px) {
     .app-design {
         height: 400px;
-        padding: 60px 0
+        padding: 0px 0px 105px 0px;
     }
 
     .app-design__content {
@@ -1196,24 +1205,6 @@ input[type="button"]:focus {
 
     .app-design__content p {
         margin: 0 auto 20px auto
-    }
-
-    .app-design__visual {
-        top: 90%;
-        left: 50%;
-        bottom: -175px;
-        -webkit-transform: translateX(-50%);
-        transform: translateX(-50%);
-        width: 679px;
-        height: 439px;
-    }
-}
-
-@media (max-width: 480px) {
-    .app-design__visual {
-        bottom: -100px;
-        width: 576px;
-        height: 366px
     }
 }
 
@@ -1314,7 +1305,7 @@ input[type="button"]:focus {
 .work {
     position: relative;
     width: 100%;
-    padding: 120px 0 60px 0;
+    padding: 60px 0 60px 0;
     background-color: #fafafa
 }
 
@@ -1426,7 +1417,7 @@ input[type="button"]:focus {
 
 @media (max-width: 991px) {
     .work {
-        padding: 90px 0 60px 0
+        padding: 60px 0
     }
 
     .work__heading {
