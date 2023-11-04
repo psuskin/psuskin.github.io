@@ -340,7 +340,7 @@ body {
 
 a {
     display: inline-block;
-    color: #213571;
+    color: #352a72;
     text-decoration: none
 }
 
@@ -428,7 +428,7 @@ textarea {
     left: 0;
     right: 45px;
     bottom: 0;
-    border: 10px solid #213571;
+    border: 10px solid #352a72;
     -webkit-animation: fadeInOut 1.6s linear infinite;
     animation: fadeInOut 1.6s linear infinite
 }
@@ -462,7 +462,7 @@ textarea {
     display: block;
     width: 100%;
     height: 1px;
-    background-color: #213571;
+    background-color: #352a72;
     -webkit-transition: -webkit-transform .2s ease-out;
     transition: -webkit-transform .2s ease-out;
     transition: transform .2s ease-out;
@@ -481,12 +481,12 @@ input[type="reset"],
 input[type="button"] {
     display: inline-block;
     padding: 5px 25px;
-    color: #213571;
+    color: #352a72;
     font-weight: 700;
     text-decoration: none;
     background-color: transparent;
     border-radius: 25px;
-    border: 2px solid #213571;
+    border: 2px solid #352a72;
     cursor: pointer;
     -webkit-transition: .2s all ease-in-out;
     transition: .2s all ease-in-out
@@ -1001,7 +1001,7 @@ input[type="button"] {
     -webkit-transform: translate(-12px, 0);
     transform: translate(-120px, 0);
     width: 24px;
-    fill: #213571;
+    fill: #352a72;
     -webkit-animation: scrollDown 1.6s infinite;
     animation: scrollDown 1.6s infinite
 }
@@ -1052,7 +1052,7 @@ input[type="button"] {
     left: 0;
     right: 120px;
     bottom: 45px;
-    border: 10px solid #213571
+    border: 10px solid #352a72
 }
 
 .about__visual {
@@ -1337,7 +1337,7 @@ input[type="button"] {
     left: 175px;
     right: 125px;
     bottom: 0;
-    border: 10px solid #213571
+    border: 10px solid #352a72
 }
 
 .work__list-el {
@@ -1633,7 +1633,7 @@ input[type="button"] {
     left: 75px;
     right: 75px;
     bottom: 0;
-    border: 10px solid #213571
+    border: 10px solid #352a72
 }
 
 .contact__visual {
@@ -1824,7 +1824,7 @@ input[type="button"] {
 
 .footer__arrow-el {
     width: 24px;
-    fill: #213571
+    fill: #352a72
 }
 
 @media (max-width: 767px) {
