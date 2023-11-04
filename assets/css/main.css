@@ -738,45 +738,45 @@ input[type="button"] {
     }
 
     .navigation__container--is-open .navigation__list>li:nth-child(1) a {
-        -webkit-transition: color .2s ease-in-out, -webkit-transform .2s .4s;
-        transition: color .2s ease-in-out, -webkit-transform .2s .4s;
-        transition: transform .2s .4s, color .2s ease-in-out;
-        transition: transform .2s .4s, color .2s ease-in-out, -webkit-transform .2s .4s
+        -webkit-transition: color .1s ease-in-out, -webkit-transform .1s .2s;
+        transition: color .1s ease-in-out, -webkit-transform .1s .2s;
+        transition: transform .1s .2s, color .1s ease-in-out;
+        transition: transform .1s .2s, color .1s ease-in-out, -webkit-transform .1s .2s
     }
 
     .navigation__container--is-open .navigation__list>li:nth-child(2) a {
-        -webkit-transition: color .2s ease-in-out, -webkit-transform .2s .6s;
-        transition: color .2s ease-in-out, -webkit-transform .2s .6s;
-        transition: transform .2s .6s, color .2s ease-in-out;
-        transition: transform .2s .6s, color .2s ease-in-out, -webkit-transform .2s .6s
+        -webkit-transition: color .1s ease-in-out, -webkit-transform .1s .3s;
+        transition: color .1s ease-in-out, -webkit-transform .1s .6s;
+        transition: transform .1s .3s, color .1s ease-in-out;
+        transition: transform .1s .3s, color .1s ease-in-out, -webkit-transform .1s .3s
     }
 
     .navigation__container--is-open .navigation__list>li:nth-child(3) a {
-        -webkit-transition: color .2s ease-in-out, -webkit-transform .2s .8s;
-        transition: color .2s ease-in-out, -webkit-transform .2s .8s;
-        transition: transform .2s .8s, color .2s ease-in-out;
-        transition: transform .2s .8s, color .2s ease-in-out, -webkit-transform .2s .8s
+        -webkit-transition: color .1s ease-in-out, -webkit-transform .1s .4s;
+        transition: color .1s ease-in-out, -webkit-transform .1s .4s;
+        transition: transform .1s .4s, color .1s ease-in-out;
+        transition: transform .1s .4s, color .1s ease-in-out, -webkit-transform .1s .4s
     }
 
     .navigation__container--is-open .navigation__list>li:nth-child(4) a {
-        -webkit-transition: color .2s ease-in-out, -webkit-transform .2s 1s;
-        transition: color .2s ease-in-out, -webkit-transform .2s 1s;
-        transition: transform .2s 1s, color .2s ease-in-out;
-        transition: transform .2s 1s, color .2s ease-in-out, -webkit-transform .2s 1s
+        -webkit-transition: color .1s ease-in-out, -webkit-transform .1s .5s;
+        transition: color .1s ease-in-out, -webkit-transform .1s .5s;
+        transition: transform .1s .5s, color .1s ease-in-out;
+        transition: transform .1s .5s, color .1s ease-in-out, -webkit-transform .1s .5s
     }
 
     .navigation__container--is-open .navigation__list>li:nth-child(5) a {
-        -webkit-transition: color .2s ease-in-out, -webkit-transform .2s 1.2s;
-        transition: color .2s ease-in-out, -webkit-transform .2s 1s;
-        transition: transform .2s 1s, color .2s ease-in-out;
-        transition: transform .2s 1s, color .2s ease-in-out, -webkit-transform .2s 1.2s
+        -webkit-transition: color .1s ease-in-out, -webkit-transform .1s .6s;
+        transition: color .1s ease-in-out, -webkit-transform .1s .6s;
+        transition: transform .1s .6s, color .1s ease-in-out;
+        transition: transform .1s .6s, color .1s ease-in-out, -webkit-transform .1s .6s
     }
 
     .navigation__container--is-open .navigation__list>li:nth-child(6) a {
-        -webkit-transition: color .2s ease-in-out, -webkit-transform .2s 1.4s;
-        transition: color .2s ease-in-out, -webkit-transform .2s 1s;
-        transition: transform .2s 1s, color .2s ease-in-out;
-        transition: transform .2s 1s, color .2s ease-in-out, -webkit-transform .2s 1.4s
+        -webkit-transition: color .1s ease-in-out, -webkit-transform .1s .7s;
+        transition: color .1s ease-in-out, -webkit-transform .1s .7s;
+        transition: transform .1s .7s, color .1s ease-in-out;
+        transition: transform .1s .7s, color .1s ease-in-out, -webkit-transform .1s .7s
     }
 
     .navigation__container--is-open .navigation__list>li a {
