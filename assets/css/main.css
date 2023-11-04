@@ -1254,8 +1254,16 @@ input[type="button"] {
   }
 
 @media (max-width: 991px) {
+    .responsive-div {
+        /* transform: translate(-50%, 100%); */
+        width: 90%;
+        top: 125px;
+        z-index: 2;
+    }
+
     .about {
         scroll-margin-top: 60px;
+        height: 1100px;
         padding: 60px 0
     }
 
@@ -1318,6 +1326,12 @@ input[type="button"] {
 
     .about__content-blurb h2 {
         font-size: 32px
+    }
+}
+
+@media (max-width: 640px) {
+    .about {
+        height: 1350px;
     }
 }
 
