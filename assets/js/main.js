@@ -14,7 +14,6 @@ $(function () {
     $(this).css('background-image', 'url(' + imgSrc + ')');
   })
 
-
   $(".img-c").click(function () {
     let w = $(this).outerWidth()
     let h = $(this).outerHeight()
@@ -24,8 +23,8 @@ $(function () {
     $(".active").not($(this)).remove()
     let copy = $(this).clone();
     copy.insertAfter($(this)).height(h).width(w).delay(500).addClass("active")
-    $(".active").css('top', y - 8);
-    $(".active").css('left', x - 8);
+    $(".active").css('top', y);
+    $(".active").css('left', x);
 
     setTimeout(function () {
       copy.addClass("positioned")

@@ -2055,12 +2055,20 @@ input[type="button"] {
     }
 }
 
+.art {
+    scroll-margin-top: 120px;
+}
+
 .gallery {
-    width: 1000px;
+    /* width: 1000px; */
     margin: auto;
     border-radius: 3px;
     overflow: hidden;
-    margin-top: 125px;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 200px));
+    grid-gap: 1rem;
+    justify-content: center;
 }
 
 .img-c {
@@ -2095,25 +2103,27 @@ input[type="button"] {
 }
 
 .img-c.active {
-    width: 50% !important;
-    height: 50% !important;
+    min-width: 300px;
+    width: 30% !important;
+    height: 80% !important;
     position: fixed !important;
-    top: 50% !important;
-    left: 50% !important;
-    transform: translate(50%, 50%) !important;
+    /* top: 50% !important; */
+    /* left: 50% !important; */
+    /* transform: translate(-50%, -50%) !important; */
     z-index: 2;
 }
 
 .img-c.postactive {
-    /* top: initial !important; */
-    /* left: inherit !important; */
     position: absolute;
     z-index: 2;
     pointer-events: none;
 }
 
 .img-c.active.positioned {
-    left: 0 !important;
-    top: 0 !important;
+    /* left: 0 !important; */
+    /* top: 0 !important; */
+    top: 80% !important;
+    left: 50% !important;
+    transform: translate(-50%, -80%) !important;
     transition-delay: 50ms;
 }
