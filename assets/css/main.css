@@ -2234,7 +2234,6 @@ input[type="button"] {
 .gtco-testimonials .card p {
     font-size: 18px;
     color: #555;
-    padding-bottom: 15px;
 }
 
 .gtco-testimonials .active {
@@ -2258,7 +2257,6 @@ input[type="button"] {
     max-width: 100%;
     height: 200px;
     width: 280px;
-    cursor: pointer;
 }
 
 @media (max-width: 767px) {
@@ -2316,7 +2314,8 @@ input[type="button"] {
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
     min-height: 1px;
-    padding: 1.25rem
+    padding: 1.25rem;
+    text-align: center;
 }
 
 .card-title {
