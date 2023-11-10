@@ -2112,7 +2112,7 @@ input[type="button"] {
     transition: transform cubic-bezier(0.4, 0, 0.2, 1) 450ms;
 }
 
-.img-c.active {
+.img-c.view {
     min-width: 300px;
     width: 30% !important;
     height: 80% !important;
@@ -2129,7 +2129,7 @@ input[type="button"] {
     pointer-events: none;
 }
 
-.img-c.active.positioned {
+.img-c.view.positioned {
     /* left: 0 !important; */
     /* top: 0 !important; */
     top: 80% !important;

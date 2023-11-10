@@ -20,11 +20,11 @@ $(function () {
     let x = $(this).offset().left
     let y = $(this).offset().top
 
-    $(".active").not($(this)).remove()
+    $(".view").not($(this)).remove()
     let copy = $(this).clone();
-    copy.insertAfter($(this)).height(h).width(w).delay(500).addClass("active")
-    $(".active").css('top', y);
-    $(".active").css('left', x);
+    copy.insertAfter($(this)).height(h).width(w).delay(500).addClass("view")
+    $(".view").css('top', y);
+    $(".view").css('left', x);
 
     setTimeout(function () {
       copy.addClass("positioned")
@@ -32,9 +32,9 @@ $(function () {
   })
 })
 
-$(document).on("click", ".img-c.active", function () {
+$(document).on("click", ".img-c.view", function () {
   let copy = $(this);
-  copy.removeClass("positioned active").addClass("postactive");
+  copy.removeClass("positioned view").addClass("postactive");
   setTimeout(function () {
     copy.remove();
   }, 500)
