@@ -2073,18 +2073,17 @@ input[type="button"] {
 .gallery {
     /* width: 1000px; */
     margin: auto;
-    border-radius: 3px;
     overflow: hidden;
     margin-top: 50px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 150px));
-    grid-gap: 1rem;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    grid-gap: 1rem;
 }
 
 .img-c {
-    width: 150px;
-    height: 150px;
+    width: 140px;
+    height: 140px;
     float: left;
     position: relative;
     overflow: hidden;
@@ -2250,4 +2249,93 @@ input[type="button"] {
 
 .owl-carousel button.owl-dot {
     outline: 0;
+}
+
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: .25rem
+}
+
+.card>hr {
+    margin-right: 0;
+    margin-left: 0
+}
+
+.card>.list-group {
+    border-top: inherit;
+    border-bottom: inherit
+}
+
+.card>.list-group:first-child {
+    border-top-width: 0;
+    border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px)
+}
+
+.card>.list-group:last-child {
+    border-bottom-width: 0;
+    border-bottom-right-radius: calc(.25rem - 1px);
+    border-bottom-left-radius: calc(.25rem - 1px)
+}
+
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem
+}
+
+.card-title {
+    margin-bottom: .75rem
+}
+
+.card-subtitle {
+    margin-top: -.375rem;
+    margin-bottom: 0
+}
+
+.card-text:last-child {
+    margin-bottom: 0
+}
+
+.card-img-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1.25rem
+}
+
+.card-img,
+.card-img-bottom,
+.card-img-top {
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    width: 100%
+}
+
+.card-img,
+.card-img-top {
+    border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px)
+}
+
+.card-img,
+.card-img-bottom {
+    border-bottom-right-radius: calc(.25rem - 1px);
+    border-bottom-left-radius: calc(.25rem - 1px)
+}
+
+.owl-dots button span {
+    box-sizing: border-box;
 }
