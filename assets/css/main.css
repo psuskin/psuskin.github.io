@@ -2117,10 +2117,10 @@ input[type="button"] {
     width: 30% !important;
     height: 80% !important;
     position: fixed !important;
-    top: 90% !important;
+    top: 50% !important;
     left: 50% !important;
     /* transform: translate(-50%, -50%) !important; */
-    z-index: 2;
+    z-index: 13;
 }
 
 .img-c.postactive {
@@ -2132,10 +2132,32 @@ input[type="button"] {
 .img-c.view.positioned {
     /* left: 0 !important; */
     /* top: 0 !important; */
-    top: 80% !important;
+    top: 50% !important;
     left: 50% !important;
-    transform: translate(-50%, -80%) !important;
+    transform: translate(-50%, -50%) !important;
     transition-delay: 50ms;
+}
+
+#full_page {
+    position: fixed;
+    z-index: 12;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: rgba(0, 0, 0, .85);
+    display: none;
+}
+
+#full_page p {
+    text-align: center;
+    position: fixed;
+    width: 90%;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .gtco-testimonials {

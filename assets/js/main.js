@@ -29,6 +29,8 @@ $(function () {
     setTimeout(function () {
       copy.addClass("positioned")
     }, 0)
+
+    document.getElementById("full_page").style.display = "block";
   })
 })
 
@@ -38,6 +40,8 @@ $(document).on("click", ".img-c.view", function () {
   setTimeout(function () {
     copy.remove();
   }, 500)
+
+  document.getElementById("full_page").style.display = "none";
 })
 
 "use strict";
