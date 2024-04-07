@@ -1,4 +1,8 @@
 window.onscroll = function () {
+  if (document.getElementById("top") === null) {
+    return;
+  }
+
   var header = document.getElementById("top");
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
     header.classList.add("gray");
@@ -47,28 +51,30 @@ $(document).on("click", ".img-c.view", function () {
 "use strict";
 
 var carousels = function () {
-  $(".owl-carousel1").owlCarousel({
-    loop: true,
-    center: true,
-    margin: 0,
-    responsiveClass: true,
-    nav: false,
-    responsive: {
-      0: {
-        items: 1,
-        nav: false
-      },
-      680: {
-        items: 2,
-        nav: false,
-        loop: false
-      },
-      1000: {
-        items: 3,
-        nav: true
+  if ($(".owl-carousel1").length) {
+    $(".owl-carousel1").owlCarousel({
+      loop: true,
+      center: true,
+      margin: 0,
+      responsiveClass: true,
+      nav: false,
+      responsive: {
+        0: {
+          items: 1,
+          nav: false
+        },
+        680: {
+          items: 2,
+          nav: false,
+          loop: false
+        },
+        1000: {
+          items: 3,
+          nav: true
+        }
       }
-    }
-  });
+    });
+  }
 };
 
 carousels();
