@@ -2441,7 +2441,7 @@ input[type="button"] {
     grid-gap: 4rem;
     padding: 4rem;
     margin: 0 auto;
-    width: max-content;
+    /* width: max-content; */
 }
 
 .blog-card {
