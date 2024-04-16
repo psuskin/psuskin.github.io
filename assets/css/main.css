@@ -2774,3 +2774,14 @@ input[type="button"] {
         padding-bottom: 5rem !important;
     }
 }
+
+@media screen and (max-width: 600px) {
+    .social-menu ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    .social-menu ul li {
+        margin: 0 5px; /* Adjust this value to increase or decrease the space between the icons */
+    }
+}
