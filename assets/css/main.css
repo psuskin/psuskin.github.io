@@ -2441,7 +2441,7 @@ input[type="button"] {
     grid-gap: 4rem;
     padding: 4rem;
     margin: 0 auto;
-    /* width: max-content; */
+    width: max-content;
 }
 
 .blog-card {
@@ -2784,4 +2784,24 @@ input[type="button"] {
     .social-menu ul li {
         margin: 0 5px; /* Adjust this value to increase or decrease the space between the icons */
     }
+}
+
+.back-to-portfolio {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.back-to-portfolio:hover {
+    background-color: #e2e6ea;
+    text-decoration: none;
 }

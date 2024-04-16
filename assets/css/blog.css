@@ -31,7 +31,7 @@ body {
     line-height: 1.5em;
     color: #3A4145;
     /* width: 100%; */
-    background: #333;
+    background: #fff;
     margin: 0;
 }
 
@@ -201,7 +201,7 @@ article img {
 }
 
 article {
-    padding: 8%;
+    padding: 4%;
 }
 
 
@@ -209,7 +209,7 @@ article {
     article {
         margin: 0;
         border-radius: 0;
-        border-bottom: 1px dotted #222;
+        /* border-bottom: 1px dotted #222; */
     }
 }
 
@@ -286,4 +286,22 @@ article {
 
 .center {
     text-align: center;
+}
+
+.back-to-blog {
+    display: inline-block;
+    margin: 20px 0;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.back-to-blog:hover {
+    /* color: #4525fc; */
+    background-color: #e2e6ea;
 }
