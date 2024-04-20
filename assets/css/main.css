@@ -2596,6 +2596,7 @@ input[type="button"] {
 @media screen and (max-width: 500px) {
     .cards-wrapper {
         padding: 4rem 2rem;
+        width: auto;
     }
 
     .blog-card {
