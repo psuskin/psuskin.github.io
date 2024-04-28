@@ -706,7 +706,7 @@ input[type="button"] {
     display: none
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1200px) {
     .navigation__cta {
         /* display: none */
         /* z-index: 11; */
@@ -2434,14 +2434,16 @@ input[type="button"] {
 }
 
 .cards-wrapper {
-    display: grid;
+    /* display: grid; */
+    display: flex;
     justify-content: center;
     align-items: center;
-    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr 1fr; */
     grid-gap: 4rem;
     padding: 4rem;
     margin: 0 auto;
-    width: max-content;
+    /* width: max-content; */
+    flex-wrap: wrap;
 }
 
 .blog-card {
