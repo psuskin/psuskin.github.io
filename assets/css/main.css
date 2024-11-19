@@ -788,6 +788,13 @@ input[type="button"] {
         transition: transform .1s .7s, color .1s ease-in-out, -webkit-transform .1s .7s
     }
 
+    .navigation__container--is-open .navigation__list>li:nth-child(7) a {
+        -webkit-transition: color .1s ease-in-out, -webkit-transform .1s .8s;
+        transition: color .1s ease-in-out, -webkit-transform .1s .8s;
+        transition: transform .1s .8s, color .1s ease-in-out;
+        transition: transform .1s .8s, color .1s ease-in-out, -webkit-transform .1s .8s
+    }
+
     .navigation__container--is-open .navigation__list>li a {
         -webkit-transform: translateY(0);
         transform: translateY(0)
@@ -2807,4 +2814,69 @@ input[type="button"] {
 .back-to-portfolio:hover {
     background-color: #e2e6ea;
     text-decoration: none;
+}
+
+.github {
+    background: url('../icons/github.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    height: 75%;
+    width: 75%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.amazon {
+    background: url('../icons/amazon.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    height: 65%;
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.instagram {
+    background: url('../icons/instagram.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    height: 65%;
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.linkedin {
+    background: url('../icons/linkedin.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    height: 65%;
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.youtube {
+    background: url('../icons/youtube.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    height: 50%;
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
