@@ -26,7 +26,7 @@ let data = {
         },
         {
             "month": "February",
-            "value": 81
+            "value": 80
         },
     ],
     "Endurance": [
@@ -42,11 +42,11 @@ let data = {
     "Wealth": [
         {
             "month": "January",
-            "value": 70
+            "value": 83
         },
         {
             "month": "February",
-            "value": 71
+            "value": 84
         },
     ],
     "Charisma": [
@@ -62,12 +62,12 @@ let data = {
 }
 
 let explanations = {
-    "Weight": "This stat tracks your weight over time.",
-    "Height": "This stat tracks your height over time.",
-    "Strength": "This stat tracks your strength over time.",
-    "Endurance": "This stat tracks your endurance over time.",
-    "Wealth": "This stat tracks your wealth over time.",
-    "Charisma": "This stat tracks your charisma over time."
+    "Weight": "weight_{current}",
+    "Height": "height_{current} - 1m",
+    "Strength": "bench_{10 \\text{ rep max}}",
+    "Endurance": "100 - (time_{10 \\text{km run}} - 40 \\text{ minutes})",
+    "Wealth": "\\frac{\\log{wealth_{current}}}{\\log{wealth_{target}}}",
+    "Charisma": "Not my strong suit, lmao"
 }
 
 function getColor(value) {
@@ -96,7 +96,7 @@ stats.forEach(card => {
                 </div>
                 <div class="card-back">
                     <p class="fs-19 mb-1">${card.status}</p>
-                    <p class="fs-6">${explanations[card.status]}</p>
+                    <p class="fs-6">\\(${explanations[card.status]}\\)</p>
                 </div>
             </div>
         </div>
