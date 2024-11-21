@@ -61,6 +61,20 @@ let data = {
     ],
 }
 
+let explanations = {
+    "Weight": "This stat tracks your weight over time.",
+    "Height": "This stat tracks your height over time.",
+    "Strength": "This stat tracks your strength over time.",
+    "Endurance": "This stat tracks your endurance over time.",
+    "Wealth": "This stat tracks your wealth over time.",
+    "Charisma": "This stat tracks your charisma over time."
+}
+
+function getColor(value) {
+    const hue = (value * 1.2).toString(10); // Scale hue from 0 to 120 (red to green)
+    return `hsl(${hue}, 80%, 45%)`;
+}
+
 // Get the latest data for each status
 let stats = Object.keys(data).map(key => {
     return {
@@ -72,16 +86,28 @@ let stats = Object.keys(data).map(key => {
 // Output Each Info Cards 
 var cardContainer = $("#infoCardContainer");
 stats.forEach(card => {
-    console.log(card)
     var block = `
     <div class="col-6 col-lg-3">
-        <div class="card stats-card text-center pt-4">
-            <p class="text-gray-300 fs-19 mb-1">${card.status}</p>
-            <p class="fw-bold fs-1">${card.quantity}</p>
+        <div class="card stats-card text-center pt-4" data-status="${card.status}">
+            <div class="card-inner">
+                <div class="card-front">
+                    <p class="text-gray-300 fs-19 mb-1">${card.status}</p>
+                    <p class="fw-bold fs-1" style="color: ${getColor(card.quantity)}">${card.quantity}</p>
+                </div>
+                <div class="card-back">
+                    <p class="fs-19 mb-1">${card.status}</p>
+                    <p class="fs-6">${explanations[card.status]}</p>
+                </div>
+            </div>
         </div>
     </div>
     `
     $(cardContainer).append(block);
+});
+
+// Handle card click event to flip the card
+$(document).on('click', '.stats-card', function() {
+    $(this).toggleClass('flipped');
 });
 
 // Prepare data for the chart
@@ -93,7 +119,6 @@ let datasets = Object.keys(data).map((key, index) => {
         data: data[key].map(item => item.value),
         borderColor: colors[index % colors.length],
         backgroundColor: colors[index % colors.length] + '33', // Add transparency
-        // fill: true, // Fill the area under the line
         tension: 0.4 // Smooth the lines
     };
 });
@@ -109,13 +134,6 @@ var statsChart = new Chart(ctx, {
     options: {
         responsive: true,
         plugins: {
-            // title: {
-            //     display: true,
-            //     text: 'Stats Progression Over Time',
-            //     font: {
-            //         size: 18
-            //     }
-            // },
             tooltip: {
                 mode: 'index',
                 intersect: false,
@@ -161,4 +179,8 @@ var statsChart = new Chart(ctx, {
             }
         }
     }
+});
+
+window.addEventListener('resize', function() {
+    statsChart.resize();
 });
