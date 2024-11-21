@@ -1,0 +1,15 @@
+.card {
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+}
+
+.stats-card:hover {
+    border: 1px solid #3750FE;
+    cursor: pointer;
+    color: #3750FE;
+}
+
+#infoCardContainer .col-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
